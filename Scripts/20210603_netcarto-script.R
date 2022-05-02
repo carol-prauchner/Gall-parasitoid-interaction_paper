@@ -7,7 +7,6 @@ dados1.2 = read.csv(header=T, sep=";", here::here("Scripts","txt-csv","rede_int2
 str(dados1.1)
 str(dados1.2)
 
-
 # Factor 2 - Parasitoids per gall species
 dados2.1 = read.csv(header=T, sep=";", here::here("Scripts","txt-csv","gal_list.csv"))
 dados2.2 = read.csv(header=T, sep=";", here::here("Scripts","txt-csv","gal_list2.csv"))
@@ -31,10 +30,10 @@ str(dados4.2)
 # Calculando netcarto para cada dupla -------------------------------------
 
 #Fator 1
-m1.1 <-rnetcarto::netcarto(dados1.2, bipartite = T)
+m1.1 <-rnetcarto::netcarto(dados1.1, bipartite = T)
 m1.1
 
-m1.2 <-rnetcarto::netcarto(dados1.1, bipartite = T)
+m1.2 <-rnetcarto::netcarto(dados1.2, bipartite = T)
 m1.2
 
 #Fator 2
